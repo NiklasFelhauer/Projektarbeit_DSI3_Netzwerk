@@ -1,0 +1,22 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 74503014-8cc7-4370-92bb-e546613866fb)
+
+  (paper "A4")
+
+  (title_block
+    (title "DSI3 Master Tranceiver")
+    (date "2026-05-15")
+    (rev "0")
+    (company "HKa")
+    (comment 1 "Draft")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
