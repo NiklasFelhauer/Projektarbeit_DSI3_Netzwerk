@@ -892,4 +892,21 @@
     )
   )
 
+  (gr_text "Slave" (at 172.72 136.525) (layer "Edge.Cuts") (tstamp 90da2f49-4d94-4b0f-befe-3fcaa93c1877)
+    (effects (font (size 5 5) (thickness 0.7)))
+  )
+
+  (zone (net 0) (net_name "") (layer "Edge.Cuts") (tstamp 28fd50b7-fd2e-44e6-953d-6a9102380aae) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 206.375 150.495)
+        (xy 137.795 150.495)
+        (xy 137.795 56.515)
+        (xy 206.375 56.515)
+      )
+    )
+  )
 )
