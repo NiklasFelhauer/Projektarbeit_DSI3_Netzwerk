@@ -1,0 +1,48 @@
+* C:\Users\nikla\Documents\00_Education\00_Hka\Mater\Projektarbeit\Projektarbeit_DSI3_Netzwerk\01_Hardware\01_LTSpice\Daniel\Master_Slave_aktuell\Master_Slave_Zwischenergebnis28052026.asc
+V1 N004 0 5
+Rm N004 BUS 10
+XM1 N006 N011 0 RUR040N02
+Vgpio N010 0 PULSE(0 3.3 1m 1u 1u 1m 5m)
+D2 N006 BUS BZX84C3V0_ZTX
+Vdd1 N002 0 5
+V_1 N009 0 3.3
+R2 BUS N005 10k
+R3 N005 0 10k
+R4 RX_ESP_Slave N009 10k
+XU3 N004 BUS N001 0 RX_ESP_Master INA180A1
+V3 N001 0 3.3
+R6 RX_ESP_Master 0 10k
+C1 N001 0 0
+C2 RX_ESP_Master 0 0
+XU1 N005 N003 N002 0 RX_ESP_Slave LM393
+R8 N003 0 14.3k
+R9 N009 N003 10k
+C5 BUS 0 4.7n
+R11 N010 N011 33
+XM3 N007 GPIO_1 0 RUR040N02
+XM4 N008 GPIO_2 0 RUR040N02
+V§GPIO_1 GPIO_1 0 PWL(0 0 2.24m 0 2.25m 3.3 2.75m 3.3 2.76m 0 3m 0 3.01m 3.3 3.99m 3.3 4m 0)
+V§GPIO_2 GPIO_2 0 PULSE(0 3.3 3m 1u 1u 1m 2m)
+R14 BUS N007 560
+R15 BUS N008 560
+R§Pull_Down N011 0 10k
+.model D D
+.lib C:\Users\nikla\Documents\LTspiceXVII\lib\cmp\standard.dio
+.include rur040n02_ltspice.lib
+.include BZX84C3V0_ZTX.lib
+.tran 5m
+* PULSE(0 120m 3m 1u 1u 1m 5m)
+* PWL(0 0 2m 0 2.001m 120m 3m 120m 3.001m 240m 4m 240m 4.001m 0)
+.include LM393.lib
+* MASTER
+* SLAVE
+.include ina180a1.lib
+.include MCP6001.lib
+* RX_Master
+* TX_Master
+* RX_Slave
+* TX_Slave
+* PULSE(0 3.3 3m 1u 1u 1m 5m)
+.lib ina180a1.lib
+.backanno
+.end
