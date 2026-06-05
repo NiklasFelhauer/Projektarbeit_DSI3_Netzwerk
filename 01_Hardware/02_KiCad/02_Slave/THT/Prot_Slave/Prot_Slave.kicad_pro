@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -205,7 +211,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.508
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -232,7 +241,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -492,7 +506,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SMD_Slave.kicad_pro",
+    "filename": "Prot_Slave.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -529,7 +543,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "PCB_Slave_Prot",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -661,18 +675,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "SMD_Slave.kicad_sch",
-        "name": "SMD_Slave",
+        "filename": "Prot_Slave.kicad_sch",
+        "name": "Prot_Slave",
         "uuid": "74503014-8cc7-4370-92bb-e546613866fb"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R16-17,N1_R1,J1-2,#PWR1,N1_L1-2,N2_L1,N2_R1",
     "variants": []
   },
   "sheets": [
     [
       "74503014-8cc7-4370-92bb-e546613866fb",
-      "SMD_Slave"
+      "Prot_Slave"
     ]
   ],
   "text_variables": {},
