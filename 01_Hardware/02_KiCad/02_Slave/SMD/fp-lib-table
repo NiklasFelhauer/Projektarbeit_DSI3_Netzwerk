@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "INA")(type "KiCad")(uri "C:/Users/nikla/Documents/00_Education/00_Hka/Mater/Projektarbeit/Projektarbeit_DSI3_Netzwerk/01_Hardware/02_KiCad/99_Libraries/ul_INA180A1IDBVR/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "LM393")(type "KiCad")(uri "C:/Users/nikla/Documents/00_Education/00_Hka/Mater/Projektarbeit/Projektarbeit_DSI3_Netzwerk/01_Hardware/02_KiCad/99_Libraries/ul_LM393P/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "AO3400A")(type "KiCad")(uri "C:/Users/nikla/Documents/00_Education/00_Hka/Mater/Projektarbeit/Projektarbeit_DSI3_Netzwerk/01_Hardware/02_KiCad/99_Libraries/ul_AO3400A/KiCADv6/footprints.pretty")(options "")(descr ""))
+)
